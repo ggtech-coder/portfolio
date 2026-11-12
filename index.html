@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GG Tech — Sites e sistemas que colocam dinheiro no caixa</title>
+  <meta name="description" content="A GG Tech cria sites, agendamentos online e sistemas sob medida. Veja seu site montado na hora, teste um sistema funcionando e calcule o retorno antes de contratar." />
+  <meta name="theme-color" content="#07090d" />
+  <meta property="og:title" content="GG Tech — Sites e sistemas que colocam dinheiro no caixa" />
+  <meta property="og:description" content="Veja seu site montado na hora, teste um sistema funcionando e calcule o retorno antes de contratar." />
+  <meta property="og:image" content="assets/logo.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip" href="#projetos">Pular para os projetos</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <p class="alert" id="alert"></p>
+
+  <header class="nav" id="nav">
+    <a class="logo" href="#topo" aria-label="GG Tech — início"><span class="logo-mark" aria-hidden="true"></span><span class="logo-text">GG Tech</span></a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="#retorno">Retorno</a>
+      <a href="#demo">Teste um sistema</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#pacotes">Preços</a>
+      <a href="#orcamento">Orçamento</a>
+    </nav>
+    <a class="btn btn-accent btn-sm" data-wa="Olá! Vi o site da GG Tech e quero conversar sobre um projeto.">Falar com a GG Tech</a>
+  </header>
+
+  <main id="topo">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="wrap hero-in">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot"></span> <span id="hud-load">Sites e sistemas sob medida</span></p>
+          <h1>Seu próximo cliente está pesquisando agora. <em>Ele precisa encontrar você.</em></h1>
+          <p class="lead">Criamos sites e sistemas que fazem o seu negócio aparecer, passar confiança e vender — inclusive enquanto você está ocupado atendendo.</p>
+          <div class="hero-cta">
+            <a class="btn btn-accent" href="#retorno">Calcular meu retorno <span aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="#projetos">Ver projetos no ar</a>
+          </div>
+          <dl class="stats">
+            <div><dt data-count="13" id="st-proj">0</dt><dd>projetos no ar</dd></div>
+            <div><dt><span data-count="5">0</span> dias</dt><dd>para publicar</dd></div>
+            <div><dt><span data-count="50">0</span>%</dt><dd>só na aprovação</dd></div>
+          </dl>
+        </div>
+
+        <!-- Prévia ao vivo -->
+        <div class="try">
+          <div class="try-head">
+            <p class="try-title">Veja o seu site antes de contratar</p>
+            <label class="try-field">
+              <span>Nome do seu negócio</span>
+              <input type="text" id="t-name" maxlength="28" placeholder="Digite aqui…" autocomplete="off" />
+            </label>
+            <div class="try-segs" id="t-segs" role="group" aria-label="Tipo de negócio"></div>
+          </div>
+          <div class="mock" id="mock" aria-live="polite">
+            <div class="mock-bar"><i></i><i></i><i></i><span id="m-url">www.seunegocio.com.br</span></div>
+            <div class="mock-page">
+              <div class="mock-nav"><b id="m-brand">Seu Negócio</b><span>Início</span><span>Serviços</span><span>Contato</span><em id="m-btn">Agendar</em></div>
+              <div class="mock-hero">
+                <small id="m-tag">Clínica</small>
+                <strong id="m-title">Cuidado de verdade, perto de você</strong>
+                <p id="m-sub">Seu Negócio — atendimento com hora marcada.</p>
+                <em id="m-cta">Agendar consulta</em>
+              </div>
+              <div class="mock-cards" id="m-cards"></div>
+              <span class="mock-wa" aria-hidden="true"></span>
+            </div>
+          </div>
+          <a class="btn btn-ghost btn-block" id="t-send" target="_blank" rel="noopener">Quero este site de verdade</a>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Barbearias</span><span>Clínicas</span><span>Odontologia</span><span>Advocacia</span><span>Estética</span><span>Autoescolas</span><span>Farmácias</span><span>Imobiliárias</span><span>Eventos</span><span>Salões de beleza</span><span>Igrejas</span><span>Lojas</span>
+          <span>Barbearias</span><span>Clínicas</span><span>Odontologia</span><span>Advocacia</span><span>Estética</span><span>Autoescolas</span><span>Farmácias</span><span>Imobiliárias</span><span>Eventos</span><span>Salões de beleza</span><span>Igrejas</span><span>Lojas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- JORNADA -->
+    <section class="section" id="jornada">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">O caminho do cliente</p>
+          <h2>A venda é decidida antes do primeiro “oi”.</h2>
+          <p class="section-sub">Acompanhe o que acontece quando alguém procura o seu serviço. Depois ligue a chave e veja o mesmo caminho com um site trabalhando por você.</p>
+        </div>
+
+        <div class="journey" id="journey" data-mode="off">
+          <div class="switch-row">
+            <span class="switch-label" data-for="off">Sem site</span>
+            <button class="switch" id="j-switch" role="switch" aria-checked="false" aria-label="Alternar entre sem site e com site"><i></i></button>
+            <span class="switch-label" data-for="on">Com a GG Tech</span>
+          </div>
+          <ol class="steps" id="j-steps"></ol>
+          <p class="journey-result" id="j-result"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RETORNO -->
+    <section class="section section-alt" id="retorno">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Retorno</p>
+          <h2>Site não é gasto. É a conta que fecha mais rápido no seu negócio.</h2>
+          <p class="section-sub">Use os seus números. Seja conservador: teste com dois ou três clientes novos por mês e veja em quanto tempo o investimento volta.</p>
+        </div>
+
+        <div class="calc">
+          <div class="calc-in">
+            <label for="c-ticket">Quanto um cliente gasta com você, em média?
+              <output id="c-ticket-out">R$ 150</output>
+            </label>
+            <input type="range" id="c-ticket" min="30" max="3000" step="10" value="150" />
+
+            <label for="c-cli">Clientes novos por mês vindos do site
+              <output id="c-cli-out">10</output>
+            </label>
+            <input type="range" id="c-cli" min="1" max="60" step="1" value="10" />
+
+            <div class="chart" id="c-chart" role="img" aria-label="Faturamento acumulado em 12 meses"></div>
+            <p class="chart-cap"><i class="k k-pay"></i> pagando o site <i class="k k-profit"></i> lucro acumulado · 12 meses</p>
+          </div>
+
+          <div class="calc-out" aria-live="polite">
+            <p class="calc-label">Faturamento a mais por mês</p>
+            <p class="calc-big" id="c-month">R$ 1.500</p>
+            <div class="calc-row">
+              <div><span>Em 12 meses</span><strong id="c-year">R$ 18.000</strong></div>
+              <div><span>O site se paga em</span><strong id="c-payback">34 dias</strong></div>
+            </div>
+            <p class="calc-note">Sem site, isso equivale a <strong id="c-day">R$ 50</strong> por dia indo para quem aparece na busca no seu lugar.</p>
+            <a class="btn btn-accent btn-block" id="c-send" target="_blank" rel="noopener">Quero esse resultado <span aria-hidden="true">→</span></a>
+            <p class="fine">Simulação com os seus números. Não é promessa de resultado.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEMO -->
+    <section class="section" id="demo">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Teste agora</p>
+          <h2>Não imagine o sistema. Use.</h2>
+          <p class="section-sub">Faça um agendamento como se fosse o seu cliente e acompanhe, ao lado, o que aparece para você no painel — na mesma hora.</p>
+        </div>
+
+        <div class="demo">
+          <div class="demo-pane">
+            <p class="pane-tag">O que o seu cliente vê</p>
+            <p class="demo-q">1. Escolha o serviço</p>
+            <div class="demo-services" id="d-services"></div>
+            <p class="demo-q">2. Escolha o horário de hoje</p>
+            <div class="demo-slots" id="d-slots"></div>
+            <button class="btn btn-accent btn-block" id="d-confirm" type="button" disabled>Escolha um horário</button>
+          </div>
+
+          <div class="demo-pane demo-admin">
+            <p class="pane-tag">O que você vê no painel</p>
+            <div class="kpis">
+              <div><span>Agendamentos hoje</span><strong id="d-count">3</strong></div>
+              <div><span>Faturamento previsto</span><strong id="d-rev">R$ 290</strong></div>
+            </div>
+            <ul class="bookings" id="d-list"></ul>
+            <p class="fine">Demonstração. Nada é enviado ou salvo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="section section-alt" id="projetos">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Projetos</p>
+          <h2>Tudo aqui está no ar. Abra e navegue.</h2>
+          <p class="section-sub">Cada projeto abre ao vivo, do jeito que o cliente final usa.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Filtrar projetos">
+          <button class="chip is-on" data-filter="todos">Todos</button>
+          <button class="chip" data-filter="site">Sites</button>
+          <button class="chip" data-filter="sistema">Sistemas e apps</button>
+        </div>
+        <div class="projects" id="projects"></div>
+      </div>
+    </section>
+
+    <!-- ENGENHARIA -->
+    <section class="section" id="engenharia">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Engenharia</p>
+          <h2>O que já construímos e está em uso.</h2>
+          <p class="section-sub">Cada recurso abaixo roda hoje em algum projeto desta página.</p>
+        </div>
+
+        <div class="live" id="live">
+          <p class="live-title"><span class="dot"></span> Medido agora, no seu aparelho</p>
+          <div class="live-grid">
+            <div><strong id="m-load">—</strong><span>para esta página ficar pronta</span></div>
+            <div><strong id="m-weight">—</strong><span>de peso transferido</span></div>
+            <div><strong id="m-fps">—</strong><span>quadros por segundo</span></div>
+            <div><strong>0</strong><span>temas ou construtores prontos</span></div>
+          </div>
+        </div>
+
+        <div class="caps">
+          <article><h3>Agendamento em tempo real</h3><p>O cliente vê os horários livres e marca sozinho, sem criar conta e sem conflito de agenda.</p><em>Milena Oliveira Studio</em></article>
+          <article><h3>Inteligência artificial</h3><p>Copiloto que lê os dados do negócio e apoia o time comercial no próximo passo.</p><em>Débora.ai</em></article>
+          <article><h3>Assinatura eletrônica</h3><p>A proposta vira contrato, o cliente assina pelo celular e a cobrança é gerada.</p><em>BASE GG</em></article>
+          <article><h3>Robô de WhatsApp</h3><p>Responde na hora, qualifica o interessado e registra o contato no funil de vendas.</p><em>GG Tech CRM</em></article>
+          <article><h3>Área do cliente</h3><p>Cada aluno, paciente ou cliente com o próprio acesso, dados e agendamentos.</p><em>Autoescola Rota Certa</em></article>
+          <article><h3>Aplicativo instalável</h3><p>Abre como app no celular e funciona mesmo sem internet, sem loja de aplicativos.</p><em>FinançasCasal</em></article>
+          <article><h3>Dados protegidos</h3><p>Login, permissões por perfil e regras de acesso no banco de dados.</p><em>Todos os sistemas</em></article>
+          <article><h3>Pronto para o Google</h3><p>SEO técnico, sitemap, dados locais e páginas de LGPD desde o primeiro dia.</p><em>Todos os sites</em></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACOTES -->
+    <section class="section section-alt" id="pacotes">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Investimento</p>
+          <h2>Preço na tela, sem “depende”.</h2>
+          <p class="section-sub">Escolha um ponto de partida. Depois você adiciona só o que fizer sentido para o seu negócio.</p>
+        </div>
+        <div class="packs" id="packs"></div>
+        <p class="fine" id="terms-line"></p>
+      </div>
+    </section>
+
+    <!-- ORÇAMENTO -->
+    <section class="section" id="orcamento">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Orçamento</p>
+          <h2>Monte o seu em um minuto.</h2>
+          <p class="section-sub">Marque o que você precisa e veja o valor mudar na hora. No final, envie tudo pronto pelo WhatsApp.</p>
+        </div>
+
+        <div class="builder">
+          <div class="builder-main">
+            <fieldset class="step">
+              <legend><span class="step-n">1</span> Escolha a base</legend>
+              <div class="opt-grid opt-grid-2" id="b-packs"></div>
+            </fieldset>
+            <fieldset class="step">
+              <legend><span class="step-n">2</span> Adicione o que quiser</legend>
+              <div id="b-addons"></div>
+            </fieldset>
+            <fieldset class="step">
+              <legend><span class="step-n">3</span> Cuidado mensal</legend>
+              <div class="opt-grid opt-grid-2" id="b-plans"></div>
+            </fieldset>
+            <fieldset class="step">
+              <legend><span class="step-n">4</span> Prazo</legend>
+              <div class="opt-grid opt-grid-2" id="b-speed"></div>
+            </fieldset>
+          </div>
+
+          <aside class="summary" id="summary" aria-live="polite">
+            <p class="summary-title">Resumo do orçamento</p>
+            <div class="seller" id="seller" hidden>
+              <p class="seller-tag">Modo vendas</p>
+              <label>Nome do cliente
+                <input type="text" id="s-client" placeholder="Ex.: Clínica Bem Viver" autocomplete="off" />
+              </label>
+              <label>Desconto da consultora
+                <select id="s-discount"></select>
+              </label>
+            </div>
+            <ul class="summary-lines" id="s-lines"></ul>
+            <div class="summary-total">
+              <span>Investimento</span>
+              <strong id="s-total">R$ 0</strong>
+            </div>
+            <p class="summary-month" id="s-month"></p>
+            <ul class="summary-terms" id="s-terms"></ul>
+            <p class="summary-roi" id="s-roi"></p>
+            <a class="btn btn-accent btn-block" id="s-send" target="_blank" rel="noopener">Enviar pelo WhatsApp</a>
+            <button class="btn btn-ghost btn-block" id="s-copy" type="button">Copiar proposta</button>
+            <p class="fine center" id="s-valid"></p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESSO -->
+    <section class="section section-alt" id="processo">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Como funciona</p>
+          <h2>Da primeira conversa ao site vendendo.</h2>
+        </div>
+        <ol class="process">
+          <li><span>01</span><h3>Conversa</h3><p>Você conta sobre o negócio pelo WhatsApp. Em 15 minutos entendemos o que você precisa.</p></li>
+          <li><span>02</span><h3>Proposta</h3><p>Você recebe o valor fechado, o prazo e o que está incluso. Sem letra miúda.</p></li>
+          <li><span>03</span><h3>Construção</h3><p>Desenhamos e programamos. Você acompanha por um link e pede os ajustes.</p></li>
+          <li><span>04</span><h3>No ar</h3><p>Publicamos, configuramos domínio e Google, e ensinamos você a usar tudo.</p></li>
+        </ol>
+        <div class="promises">
+          <div><h3>O site é seu</h3><p>Domínio e código ficam no seu nome. Sem fidelidade.</p></div>
+          <div><h3>Celular primeiro</h3><p>É pelo telefone que o seu cliente chega. É por ele que começamos.</p></div>
+          <div><h3>Metade só na aprovação</h3><p>Você paga a segunda parte quando olhar e disser “é isso”.</p></div>
+          <div><h3>Dentro da LGPD</h3><p>Política de privacidade, termos de uso e aviso de cookies inclusos.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DÚVIDAS -->
+    <section class="section" id="duvidas">
+      <div class="wrap wrap-narrow">
+        <div class="section-head">
+          <p class="kicker">Dúvidas</p>
+          <h2>Perguntas frequentes.</h2>
+        </div>
+        <div class="faq">
+          <details><summary>Tenho Instagram e WhatsApp. Preciso mesmo de site?</summary><p>O Instagram mostra você para quem já te segue. O site mostra você para quem está procurando o serviço agora, no Google — e esse é o cliente mais fácil de fechar. Um não substitui o outro: o site é onde a venda acontece.</p></details>
+          <details><summary>Como funciona o pagamento?</summary><p id="faq-pay"></p></details>
+          <details><summary>Preciso ter domínio, logo ou textos prontos?</summary><p>Não. Se você já tem, usamos. Se não tem, dá para incluir logo, textos e domínio como adicionais no orçamento, e cuidamos de tudo.</p></details>
+          <details><summary>O plano mensal é obrigatório?</summary><p>Não. Ele cobre hospedagem, segurança, backup e pequenas alterações. Se preferir, entregamos os arquivos e você hospeda onde quiser.</p></details>
+          <details><summary>E se eu quiser mudar algo depois de pronto?</summary><p>Cada pacote já inclui rodadas de ajustes antes da entrega. Depois disso, as alterações entram nas horas do plano mensal ou são orçadas à parte, sempre com valor combinado antes.</p></details>
+          <details><summary>Meu negócio precisa de algo que não está na lista.</summary><p>Sistemas sob medida são a nossa especialidade. Conte a ideia pelo WhatsApp e devolvemos uma proposta fechada.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="final">
+      <div class="wrap">
+        <p class="kicker" id="final-slots"></p>
+        <h2>Quanto antes o site entra no ar, antes ele começa a se pagar.</h2>
+        <p class="lead">Uma conversa de 15 minutos no WhatsApp e você sai com valor fechado e data de entrega.</p>
+        <a class="btn btn-accent btn-xl" data-wa="Olá! Vi o site da GG Tech e quero um orçamento.">Começar meu projeto <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-in">
+      <div>
+        <span class="logo"><span class="logo-mark" aria-hidden="true"></span><span class="logo-text">GG Tech</span></span>
+        <p>Engenharia digital para negócios que querem crescer de verdade.</p>
+      </div>
+      <ul id="footer-links"></ul>
+      <p class="fine" id="copyright"></p>
+    </div>
+  </footer>
+
+  <a class="fab" data-wa="Olá! Vi o site da GG Tech e quero conversar." aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2Z"/><path fill="#25d366" d="M9 7.500c-.300 0-.800.100-1.100.600-.400.500-1 1.400-.600 2.900.500 1.600 2.300 3.800 4.800 4.900 1.900.800 2.700.600 3.300.300.600-.300 1.100-.900 1.200-1.500.100-.400 0-.600-.300-.700l-1.700-.800c-.300-.100-.500 0-.700.200l-.600.800c-.200.200-.400.200-.600.100-1.300-.600-2.300-1.600-2.900-2.800-.100-.200 0-.400.100-.600l.500-.600c.100-.200.200-.400.100-.600l-.800-1.800c-.100-.300-.400-.400-.700-.400Z"/></svg>
+  </a>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
