@@ -7,8 +7,8 @@
 const GG = {
   // ---------- CONTATO ----------
   contato: {
-    // TODO: coloque o WhatsApp real da consultora (DDI + DDD + número, só dígitos)
-    whatsapp: "5511999999999",
+    // WhatsApp de atendimento (DDI + DDD + número, só dígitos)
+    whatsapp: "5511925196997",
     consultora: "Consultora GG Tech", // TODO: nome de quem atende
     email: "contato@ggtech.com.br", // TODO: e-mail real
     instagram: "", // TODO: ex. "https://instagram.com/ggtech" (vazio = não aparece)

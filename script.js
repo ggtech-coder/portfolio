@@ -11,6 +11,24 @@
 
   const C = GG.comercial;
   const sellerMode = new URLSearchParams(location.search).has("vendas");
+
+  // ---------- Tema claro / escuro ----------
+  (function theme() {
+    const root = document.documentElement;
+    const btn = $("#theme");
+    const meta = $('meta[name="theme-color"]');
+    const apply = (t) => {
+      root.dataset.theme = t;
+      meta.setAttribute("content", t === "light" ? "#f6f7f9" : "#07090d");
+      btn.setAttribute("aria-label", t === "light" ? "Mudar para modo escuro" : "Mudar para modo claro");
+    };
+    apply(root.dataset.theme === "light" ? "light" : "dark");
+    btn.addEventListener("click", () => {
+      const t = root.dataset.theme === "light" ? "dark" : "light";
+      apply(t);
+      try { localStorage.setItem("gg-theme", t); } catch {}
+    });
+  })();
   const calm = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   const toast = (msg) => {

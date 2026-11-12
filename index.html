@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script>try { if (localStorage.getItem("gg-theme") === "light") document.documentElement.dataset.theme = "light"; } catch (e) {}</script>
 </head>
 <body>
   <a class="skip" href="#projetos">Pular para os projetos</a>
@@ -31,7 +32,13 @@
       <a href="#pacotes">Preços</a>
       <a href="#orcamento">Orçamento</a>
     </nav>
-    <a class="btn btn-accent btn-sm" data-wa="Olá! Vi o site da GG Tech e quero conversar sobre um projeto.">Falar com a GG Tech</a>
+    <div class="nav-actions">
+      <button class="theme-btn" id="theme" type="button" aria-label="Mudar para modo claro">
+        <svg class="i-sun" viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.3M12 19.2v2.3M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.3M19.2 12h2.3M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path d="M20 14.6A8.300 8.300 0 0 1 9.400 4 8.300 8.300 0 1 0 20 14.600Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      </button>
+      <a class="btn btn-accent btn-sm" data-wa="Olá! Vi o site da GG Tech e quero conversar sobre um projeto.">Fale conosco</a>
+    </div>
   </header>
 
   <main id="topo">
